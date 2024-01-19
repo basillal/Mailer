@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { Nav } from '../Nav';
-// import { Header } from '../Header';
+import { Nav } from '../Nav';
+import { Header } from '../Header';
 
 
 
@@ -61,8 +61,8 @@ export const SuccessReports = () => {
 
   return (
     <>
-    {/* <Nav></Nav>
-    <Header></Header> */}
+    <Nav></Nav>
+    <Header></Header>
       <div className="report">
         <input type="text" onChange={(e) => searchThroughEmail(e.target.value)} />
         <button onClick={resetFilters}>RESET FILTERS</button>
